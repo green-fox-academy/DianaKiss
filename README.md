@@ -1,2 +1,2 @@
-[my first ever git repository](../DianaKiss/hello-world)
+[my first ever git repository](../../DianaKiss/hello-world)
 
