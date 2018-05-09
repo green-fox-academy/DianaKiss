@@ -1,0 +1,20 @@
+CLI and Git training
+
+reminding me the good old DOS or Debian days
+cd /~
+ls -a / -l /-t
+mkdir 
+rmdir
+cp
+mv
+
+GIT bash
+git clone
+
+git add
+git commit
+git push
+
+git status
+
+git remote -v
