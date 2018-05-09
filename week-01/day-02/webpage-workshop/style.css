@@ -1,0 +1,56 @@
+<!--  -->
+
+
+body {
+    font-family: consolas;
+    margin: 0;
+    background-image: url("topography.png"); 
+    }
+
+ul {
+    padding: 14px 10%;
+    margin: 0;
+    background-color: #333333;
+    text-align: right;
+}
+
+li {
+    display: inline;
+ }
+
+img {
+    position: relative;
+    padding-left: 10%;
+    padding-top: 9px;
+    float: left;
+    height: 30px;
+}
+
+ a {
+     color: #d11668;
+ }
+
+ em {
+     font-size: 14px;
+ }
+
+div {
+    padding: 10%;
+}
+
+h1 {
+
+}
+
+h2 {
+    color: #d11668;
+}
+
+h3 {
+    text-align: center;
+}
+
+#smalltext {
+    font-size: small;
+}
+
