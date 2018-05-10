@@ -18,3 +18,5 @@ git push
 git status
 
 git remote -v
+
+git config --global pull.rebase true /most useful if my stuff gets screwed up in origin or master/
