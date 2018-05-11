@@ -16,7 +16,7 @@ export {};
 
 
 let lineCount: number = 6;
-let percentChar: string = "%";
+let percentChar: string = '%';
 let space: string = ' ';
 let sqTop: string = '%';
 let sqSideLine: string = '%';
