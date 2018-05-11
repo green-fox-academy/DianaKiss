@@ -20,13 +20,14 @@ let space: string = '_';
 let spaceVar: string = ' ';
 
 for (let j: number = lineCount; j > 0; j--) {
+    space = space ;
     console.log(space);
     console.log(j);
+
+
+    for (let i: number = 0; i < lineCount; i++) {
+
+        console.log(`${space} ${pyramidVar}`);
+        pyramidVar = pyramidVar + pyramid;
+    }
 }
-
-for (let i: number = 0; i < lineCount; i++) {
-
-    console.log(space pyramidVar);
-    pyramidVar = pyramidVar + pyramid;
-}
-
