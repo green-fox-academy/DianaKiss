@@ -14,8 +14,6 @@ export {};
 // The pyramid should have as many lines as lineCount is
 
 let lineCount: number = 4;
-
-// code works fine, just needs to expand nr of spaces in variant: pyramid - not so elegant...
 let pyramid: string = '*';
 let pyramidVar: string = '**';
 let space: string = ' '
