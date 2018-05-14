@@ -29,8 +29,13 @@ for (let i: number = 0; i < lineCount - 1; i++) {
 console.log(sqTop);
 
 
+
+
+
+
 //do the squareSideLines
 
+/*
 for (let i: number = 0; i < lineCount - 2; i++) {
     sqSide1 = sqSide1 + percentChar; // here i need to add space i-1 times in the middle
     // here i have to define sqSide2
@@ -38,10 +43,7 @@ for (let i: number = 0; i < lineCount - 2; i++) {
     console.log(sqSide2);
     
 }
-
-
-
-
+*/
 
 /*draw the actual square
 
