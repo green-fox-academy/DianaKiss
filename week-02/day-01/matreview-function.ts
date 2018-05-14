@@ -13,7 +13,7 @@ function greetOptionl(greetStr: string, nameStr:string = 'GFA', opt?: boolean): 
   console.log(`${greetStr} ${nameStr}`); 
 } 
 
-
+console.log('THIS IS THE PART I WANNA SEE');
 
 function multiply(a: number, b: number): number { //it has a return value
   let result = a * b;
@@ -26,7 +26,7 @@ greetOptionl('hello', 'Dia', true);
 /* if i write here only 1 variable, js will figure out 
 and use the fallback variable from the funtion */
 
-console.log(multiply(2, 5))
+console.log(multiply(2, 5));
 
 const sum = function(a: number, b: number): number {
   return a + b;  
@@ -109,7 +109,7 @@ let helloDogs = pets.map((dog, index) => {
 });
 */
 
-// ez ugyanaz, csak rovidebb:
+/* ez ugyanaz, csak rovidebb:
 let helloDogs = pets.map((dog, index) => ( `Hello, ${dog}`));
 
 
@@ -128,4 +128,4 @@ const longNames = pets.filter(function(dog) {
 
 console.log(longNames);
 
-
+*/
