@@ -8,8 +8,7 @@ let abc: string [] = ["Arthur", "Boe", "Chloe"];
 
 console.log(abc);
 
-abc = ["Chloe", "Boe", "Arthur"];
+abc.reverse();
 
 console.log(abc);
 
-//this seems too easy to be a solution
