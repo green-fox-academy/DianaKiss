@@ -1,5 +1,5 @@
 'use strict';
-export {};
+export { };
 
 
 
@@ -20,12 +20,12 @@ let space: string = ' '
 
 // let's try to set up pyramid space-length
 for (let j: number = 0; j < lineCount; j++) {
-    pyramid = space + pyramid
+  pyramid = space + pyramid;
 }
 
 
-for (let i: number = 0; i < lineCount; i ++) {
-    console.log(pyramid)
-    pyramid = pyramid.slice( 1 ) + pyramidVar;
+for (let i: number = 0; i < lineCount; i++) {
+  console.log(pyramid)
+  pyramid = pyramid.slice(1) + pyramidVar;
 }
 
