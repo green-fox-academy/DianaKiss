@@ -8,7 +8,7 @@ export {};
 
 let numList: number [] = [1, 2, 3, 8, 5, 6];
 
-console.log(numList);
+//console.log(numList);
 
 let updateNumList = numList.map((num: number, index: number) =>  {
   if (num !== index + 1) { 
@@ -18,5 +18,4 @@ let updateNumList = numList.map((num: number, index: number) =>  {
   return num;
 });
 
-console.log(updateNumList);
-
+console.log(updateNumList[3]);
