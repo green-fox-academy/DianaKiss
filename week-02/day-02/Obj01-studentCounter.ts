@@ -14,22 +14,24 @@ let students: any[] = [
   {name: 'Gerzson', age: 10, candies: 1},
 ];
 
+console.log(students[1]);
 
 //console.log(students.name);
 
 
-function candyFun(name: string, candies: number) {
+function candyFun(nameOfArray) {
   let candyArray: object[] = [];
   students.forEach(OneStud => {
-    candyArray.push({
+      candyArray.push({
       name: OneStud.name,
       candies: OneStud.candies,
     });
   });
-  console.log(candyArray[0]);
+  console.log(candyArray);
+  
+ }
 
-//  return console.log(`${candyArray.name} - ${candyArray.candies}`);
-}
+ candyFun(students);
 
 
 
