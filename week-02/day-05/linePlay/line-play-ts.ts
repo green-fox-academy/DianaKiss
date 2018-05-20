@@ -10,30 +10,25 @@ let cHeight: number = canvas.height;
 
 let x: number = 0;
 let wX: number = 0;
-let wY: number = 0;
 
-function Glinedraw(X, Y) {
+function Glinedraw(X) {
   ctx.beginPath();
   ctx.strokeStyle = 'green';
-  ctx.moveTo(wX, wY + x);
-  ctx.lineTo(wX + x, wY + cHeight);
+  ctx.moveTo(wX, wX + x);
+  ctx.lineTo(wX + x, wX + cHeight);
   ctx.stroke();
 }
 
-function Plinedraw(X, Y) {
+function Plinedraw(X) {
   ctx.beginPath();
   ctx.strokeStyle = 'purple';
-  ctx.moveTo(cWidth - x , wY );
+  ctx.moveTo(cWidth - x , wX );
   ctx.lineTo(cWidth, cHeight - x);
   ctx.stroke();
 }
 
-Plinedraw(0,0);
-
-
 for (let i: number = 0; i < 20; i ++) {
   x = x + 20;
-  Glinedraw(wX, wY);
-  Plinedraw(wX, wY)
+  Glinedraw(wX);
+  Plinedraw(wX);
 }
-
