@@ -16,5 +16,5 @@ function rainbowBox(size: number, color: string) {
 }
 
 for (let i: number = 0; i < 600; i ++) {
-  rainbowBox(600 - i , `hsl(${i}, 100%, 50%`);
+  rainbowBox(600 - i , `hsl(${i}, 100%, 50%)`);
 }

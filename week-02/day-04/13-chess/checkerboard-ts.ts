@@ -12,9 +12,9 @@ function drawSquare(startX: number, startY: number, size: number, ) {
 
 for (let i: number = 0; i < 9; i ++) {
   for (let j: number = 0; j < 9; j ++) {
-    ctx.fillStyle = 'khaki';
+    ctx.fillStyle = `hsl(${Math.random() * 255}, 100%, 50%)`;
     drawSquare(i * 100, j  * 100, 50);
-    ctx.fillStyle = 'green';
+    ctx.fillStyle = `hsl(${Math.random() * 100}, 100%, 50%)`;
     drawSquare(i * 100 + 50, j  * 100 + 50, 50);
   }
 }
