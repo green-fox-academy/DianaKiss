@@ -14,9 +14,6 @@ class ElectricGuitar extends StringedInsturment {
   sound() {
     return this.woiceOf
   }
-
 }
 
-
 export { ElectricGuitar };
-

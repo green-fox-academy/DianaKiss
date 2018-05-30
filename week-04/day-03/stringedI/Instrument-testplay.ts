@@ -24,4 +24,3 @@ let bassGuitar2 = new BassGuitar(undefined, 5);
 console.log('Test 2 Play');
 guitar2.play();
 bassGuitar2.play();
-
