@@ -4,6 +4,7 @@ import { Animal } from './Animal';
 import { Bird } from './Bird';
 import { Reptile } from './Reptile';
 import { Mammal } from './Mammal';
+import { Flyable } from '../Flyable/Flyable';
 
 let allatkert = []
 
