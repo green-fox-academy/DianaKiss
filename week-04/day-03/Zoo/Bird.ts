@@ -8,10 +8,12 @@ class Bird extends Animal {
     
   }
   getName() {
-    return `${this.sound} ! Hi, I\'m a ${this.name}`
+    return `${this.sound} ! Hi, I\'m a ${this.name}`;
   }
 
-  breed() {}
+  breed() {
+    return 'lay eggs';
+  }
 }
 
 
