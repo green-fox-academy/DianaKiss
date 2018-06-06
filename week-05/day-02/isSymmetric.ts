@@ -26,8 +26,6 @@ let symmetricMatrix: number[][] = [
 
 function isSymmetric(anyArr: number[][]) {
   
-  let arrX: number = 0;
-  let arrY: number = 0;
   for (let i: number = 0; i < anyArr.length; i++) {
     for (let j: number = 0; j < anyArr.length; j++) {
       if (anyArr[i][j] !== anyArr[j][i]) {
