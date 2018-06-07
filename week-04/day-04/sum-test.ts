@@ -1,7 +1,10 @@
 'use strict';
 
-import { test } from 'tape';
+// import { test } from 'tape';
 import { Integers } from './sum';
+
+let test = require('tape');
+
 
 test('test array addition', t => {
   const newSum = new Integers([]);

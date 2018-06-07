@@ -62,4 +62,4 @@ function familyFriendlizer(filename: string, wordlist: string[]): any {
   return counter
 }
 
-console.log(familyFriendlizer('content.txt', offensiveWords)); // should print out 17
+console.log(familyFriendlizer('contenet.txt', offensiveWords)); // should print out 17
