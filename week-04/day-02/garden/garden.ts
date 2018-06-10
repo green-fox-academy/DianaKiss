@@ -4,28 +4,52 @@ import { Plant } from './plant';
 import { Flower } from './flower';
 import { Tree } from './tree';
 
-class Garden {
+export class Garden {
 
   protected name: string;
   protected flowers: Flower[];
   protected trees: Tree[];
-  
+
   public constructor(name: string) {
     this.name = name;
     this.flowers = [];
     this.trees = [];
 
-  } 
+  }
+  
+  public plantFlower(flower: Flower) {
+    this.flowers.push(flower);
+  }
+  
+  public plantTree(tree: Tree) {
+    this.trees.push(tree);
+  }
 
-  public plantWatering(): void {
+
+  public plantWatering(waterAmount: number): void {
+    let plantNumbers: number = this.flowers.length + this.trees.length;
+    let countThirstyFlowers: number = 0;
+    let countThirstyTrees: number = 0;
+    for (let i: number = 0; i < this.flowers.length; i ++) {
+      if (this.flowers[i].returnWaterlevel() < 5) {
+        this.flowers[i].checkwater();
+        countThirstyFlowers ++;
+      }
+    }  
+      for (let i: number = 0; i < this.trees.length; i ++) {
+        if (this.trees[i].returnWaterlevel() < 5) {
+          this.trees[i].checkwater();
+          countThirstyTrees ++
+        }
+     
+    }
+      
+      // console.log(`Watering with ${waterAmount}`);
+      // for (let i: number = 0; i < countThirstyFlowers; i ++) {
+      //   this.flowers[].getWatered(waterAmount / (countThirstyFlowers + countThirstyTrees))
+      // }
+
+
 
   }
 }
-
-let flowerbed: Flower[] = [];
-
-let hajnalka = new Flower('yellow');
-flowerbed.push(hajnalka);
-
-let ibolya = new Flower('blue');
-flowerbed.push(ibolya);
