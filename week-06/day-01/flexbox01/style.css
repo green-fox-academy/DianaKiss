@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  padding: 55px;
+  
+
+}
+
+.item {
+  display: inline-block;
+  width: 185px;
+  height: 185px;  
+}
+
+.green {
+  display: inline-block;
+  background-color: #51d400;
+}
+
+.yellow {
+  display: inline-block;
+  background-color: #ffd62a;
+}
+
+.purple {
+  display: inline-block;
+  background-color: #b02aff;
+}
