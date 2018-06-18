@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.menubar {
+  display: flex;
+  background-color: #b02aff;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+
+.item {
+  display: inline-block;
+  flex-flow: row;
+  background-color: cyan;
+  width: 100px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+article {
+  display: inline-block;
+  flex-flow: row;
+  flex-grow: 3;
+  background-color: #ffd62a;
+ 
+}
+
+aside {
+  display: inline-block;
+  flex-flow: row;
+  flex-grow: 1;
+  background-color: #51d400;
+}
