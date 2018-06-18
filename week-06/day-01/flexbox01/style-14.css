@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  padding: 55px;
+  width: 400px;
+  height: 100%;
+  flex-direction: column;
+
+}
+
+.item {
+  display: inline-block;
+  flex-flow: column;
+ 
+}
+
+.green {
+  background-color: #51d400;
+  flex: 1;
+  order: -1;
+}
+
+.yellow {
+  background-color: #ffd62a;
+  flex: 2;
+  order: 1;
+}
+
+.purple {
+  background-color: #b02aff;
+  flex: 1;
+  order: 0;
+}
