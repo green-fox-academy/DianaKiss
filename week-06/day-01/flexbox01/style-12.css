@@ -1,7 +1,7 @@
 .container {
   display: flex;
   padding: 55px;
-  flex-flow: row-reverse;
+  
 
 }
 
@@ -9,7 +9,6 @@
   display: inline-block;
   width: 185px;
   height: 185px;  
-
 }
 
 .green {
