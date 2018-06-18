@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  background-color: #ffd62a;
+  padding: 55px;
+  width: 800px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.purple {
+  display: inline-block;
+  flex-flow: column;
+  background-color: #b02aff;
+  width: 100px;
+  height: 100px;
+}
