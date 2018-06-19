@@ -22,6 +22,7 @@ class Zoo {
 }
 
 let allatkert = new Zoo('Fovarosi Allatkert');
+let vadaspark = new Zoo('Szegedi Vadaspark');
 
 let peacock = new Bird('Peacock', 3, 'male', 'colorful talons', 'EEEEEEERRRRRK!');
 
