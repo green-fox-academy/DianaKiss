@@ -24,12 +24,13 @@ let plum = new Tree('purple');
 arboretum.plantTree(plum);
 
 
-// ibolya.checkwater();
-// hajnalka.checkwater();
-// peach.checkwater();
-// plum.checkwater();
-
-
 
 console.log(arboretum.plantWatering(20));
+
+
+
+ibolya.checkwater();
+hajnalka.checkwater();
+peach.checkwater();
+plum.checkwater();
 

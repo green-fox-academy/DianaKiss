@@ -41,13 +41,13 @@ export class Garden {
           this.trees[i].checkwater();
           countThirstyTrees ++
         }
-     
     }
+
       
       // console.log(`Watering with ${waterAmount}`);
-      // for (let i: number = 0; i < countThirstyFlowers; i ++) {
-      //   this.flowers[].getWatered(waterAmount / (countThirstyFlowers + countThirstyTrees))
-      // }
+     for (let i: number = 0; i < countThirstyFlowers; i ++) {
+       this.flowers[i].getWatered(waterAmount / (countThirstyFlowers + countThirstyTrees))
+      }
 
 
 
