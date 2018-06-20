@@ -3,15 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Flexbox Excercise</title>
+  <title>DOM: Accessing Elements</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+
+  <div id="b325" class="asteroid">The King</div>
+  <div class="asteroid b326">The Conceited Man</div>
+  <div class="asteroid b328">The Businessman</div>
+  <div class="asteroid b329">The Lamplighter</div>
   <script>
-    console.log('Hello World!');
-  </script>
-  
+      'use strict';
+      var king = document.getElementById('b325');
+      console.log('king', king);
+      var lamplighter = document.querySelector('.b329');
+      console.log('lamplighter', lamplighter);
+      var asteroids = document.querySelectorAll('div.asteroid');
+      for (var i = 0; i < asteroids.length; i++) {
+        console.log(asteroids[i]);
+      }
+    </script>
+
   <header>
     <nav>
       <ul class="menubar">
