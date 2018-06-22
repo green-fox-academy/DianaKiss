@@ -13,7 +13,10 @@ const todos = [
 
 
 app.get('/', (req, res) => {
-  res.render('home');
+    
+  res.render('home', {
+    todos,
+  });
 });
 
 app.listen(PORT, () => {

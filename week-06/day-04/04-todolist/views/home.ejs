@@ -8,11 +8,11 @@
     <h1>My To-Do list</h1>
 
     <ul>
-      <li>empty line</li>
-      <li>empty line</li>
-      <li>empty line</li>
-      <li>empty line</li>
-      <li>empty line</li>
+      <% todos.forEach((element) => { %>
+        <li>
+            <%= element %>
+        </li>
+      <% }) %>
     </ul>
 
   </body>
