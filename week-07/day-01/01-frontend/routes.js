@@ -11,8 +11,6 @@ app.get('/', (req, res) => {
 
 app.get('/doubling', (req, res) => {
   console.log(req.query);
-
-  // let result = {"input": req.query, "result": req.query * 2 };
   if (req.query.input) {
     res.json({
       received: +req.query.input,
@@ -23,6 +21,12 @@ app.get('/doubling', (req, res) => {
       error: 'Please provide an input!',
     });
   }
+});
+
+app.get('/greeter', (req, res) => {
+  console.log(req.query);
+  let welcome_message = `Oh, hi there ${req.query.name}, my dear ${req.query.title}!`;
+  res.json({ welcome_message });
 
 });
 
