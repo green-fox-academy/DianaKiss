@@ -24,17 +24,49 @@ console.log(mapwith([1, 2, 3], addOne));
 //expected result: [2, 3, 4]
 
 
+
 // // Exercise 2:
 // // Create a callback function which remove every second letter from a string
 
-const words = ['map', 'reduce', 'filter'];
+let words = ['map', 'reduce', 'filter'];
+
+
+// function removeSecondLetter(string) {
+//     let wordArr = string.split('');
+//     let outputArr = [];
+//     for (let i = 0; i < wordArr.length; i++) {
+//       if (i % 2 === 0) {
+//         outputArr.push(wordArr[i]);
+//         //console.log(wordArr[i]);
+//         //console.log(outputArr);
+//       }
+//     }
+//     let finalword = outputArr.join('');
+//     console.log(finalword);
+//   }
+
+
+
+
 
 const removeSecondLetter = (string) => {
-
-  for (let i = 0; i < array.length; i++) {
-
+  let wordArr = string.split('');
+  let outputArr = [];
+  for (let i = 0; i < wordArr.length; i++) {
+    if (i % 2 === 0) {
+      outputArr.push(wordArr[i]);
+      //console.log(wordArr[i]);
+      //console.log(outputArr);
+    }
   }
+  let finalword = outputArr.join('');
+  console.log(finalword);
 }
+
+removeSecondLetter('kutya');
+
+
+
 
 console.log(mapwith(words, removeSecondLetter));
 // expected result: ['mp','rdc', 'fle']
