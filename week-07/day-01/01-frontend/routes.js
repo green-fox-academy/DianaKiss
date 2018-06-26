@@ -29,20 +29,48 @@ app.get('/greeter', (req, res) => {
     let welcome_message = `Oh, hi there ${req.query.name}, my dear ${req.query.title}!`;
     res.json({ welcome_message });
   } else if (req.query.name) {
-    res.json({ 
-      error: 'Please provide a title',
-     });
+    res.json({
+      error: 'Please provide a title!',
+    });
   } else if (req.query.title) {
-    res.json({ 
-      error: 'Please provide a name',
-     });
+    res.json({
+      error: 'Please provide a name!',
+    });
   } else {
-    res.json({ 
-      error: 'Please provide name and title',
-     });
+    res.json({
+      error: 'Please provide a name!',
+    });
   }
 });
 
+app.get('/appenda/:appendable', (req, res) => {
+  console.log(req.params); //ha :-ez .params lesz / ha ?-lel adom be az inputut, -ez .query-lesz. !!!!!
+  res.json({
+    appended: `${req.params.appendable}a`,
+  });
+
+});
+
+app.post('/dountil/:what', (req, res) => {
+  console.log(req.params);
+  if (req.params.what = 'sum') {
+    console.log(req.body);
+
+    res.json({
+     
+      error: 'sum'
+    });
+  } else if (req.params.what = 'factor') {
+    res.json({
+      error: 'factor'
+    });
+  } else {
+    res.json({
+      error: 'Please provide a number!'
+    });
+  }
+
+});
 
 
 module.exports = app;
