@@ -6,6 +6,9 @@ const mysql = require('mysql');
 const app = express();
 const PORT = 3000;
 
+app.use('/static', express.static('static'));
+app.set('view engine', 'ejs');
+
 const conn = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -15,7 +18,7 @@ const conn = mysql.createConnection({
 
 app.get('/booknames', (req, res) => {
   let sql = 'SELECT book_name from book_mast;'
-
+   
   conn.query(sql, (err, rows) => {
     if (err) {
       console.log(err);
@@ -23,13 +26,17 @@ app.get('/booknames', (req, res) => {
       return;
     }
 
-
-    res.json({
-      book_names: rows,
+    res.render('index', {
+       
     });
-  });
-});
+    // res.json({
+    //   book_names: rows,
+    // });
 
+  });
+  
+
+});
 
 
 

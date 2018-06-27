@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bookstore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/style.css" />
+
+</head>
+
+<body>
+  <header>
+    <h1>Bookstore</h1>
+  </header>
+
+  <div class="maincontainer">
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Authors</th>
+          </tr>
+        </thead>
+        <% sql.forEach((book_name) => { %>
+        <tbody>
+          <tr>
+            <td><%= book_name %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+
+    </main>
+
+    <div>
+
+    </div>
+    <footer>
+      <p>
+        stuff I want to write here sometime
+      </p>
+    </footer>
+  </div>
+
+
+
+
+</body>
+
+</html>
