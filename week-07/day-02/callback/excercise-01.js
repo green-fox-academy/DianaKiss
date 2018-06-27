@@ -60,7 +60,7 @@ const removeSecondLetter = (string) => {
     }
   }
   let finalword = outputArr.join('');
-  console.log(finalword);
+   return finalword;
 }
 
 removeSecondLetter('kutya');
