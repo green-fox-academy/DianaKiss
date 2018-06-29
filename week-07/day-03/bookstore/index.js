@@ -32,14 +32,8 @@ app.get('/booknames', (req, res) => {
     // res.json({
     //   book_names: rows,
     // });
-
   });
-  
-
 });
-
-
-
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);

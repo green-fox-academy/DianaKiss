@@ -27,7 +27,7 @@ app.get('/hello', (req, res) => {
 
 app.get('/api/posts', (req, res) => {
   let sql = 'SELECT * from posts;';
-   
+
   conn.query(sql, (err, rows) => {
     if (err) {
       console.log(err);
@@ -40,14 +40,11 @@ app.get('/api/posts', (req, res) => {
   });
 });
 
-app.post('/api/post', (req, res) => {
-  const {title, url} = req.body;
+app.post('/api/posts', (req, res) => {
+  const { title, url } = req.body;
   let sql = `INSERT INTO posts (title, url) VALUES ('${req.body.title}', '${req.body.url}');`;
-  
-  console.log(title);
-  console.log(url);
 
-  conn.query( sql, (err, rows) => { 
+  conn.query(sql, (err, rows) => {
     if (err) {
       console.log(err);
       res.status(500).send();
@@ -58,5 +55,21 @@ app.post('/api/post', (req, res) => {
     });
   });
 });
+
+app.put('/api/posts/:id/upvote', (req, res) => {
+  let id = req.params.id;
+  let sql = `UPDATE posts SET vote = 1  WHERE id = ${id};`;
+  conn.query(sql, (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send();
+      return;
+    }
+    res.json({
+      message: 'OK',
+    });
+  });
+});
+
 
 module.exports = app;
