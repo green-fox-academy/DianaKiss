@@ -1,7 +1,10 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
   color: #6b6b6b;
   background-color: #c2c2c2;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 form {
