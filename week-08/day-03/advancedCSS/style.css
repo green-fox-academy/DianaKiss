@@ -1,0 +1,31 @@
+body {
+  background-color: #3e94ec;
+}
+
+thead {
+ background-color: #000000;
+ color: #FFFFFF;
+}
+
+th{
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+}
+tbody tr:nth-child(odd) {
+  background-color: #A2A2A2;
+}
+
+td::before {
+  content: "$";
+  display: inline-block;
+  letter-spacing: 2px;
+  margin: 5px;
+}
+
+td {
+  justify-content: right;
+}
