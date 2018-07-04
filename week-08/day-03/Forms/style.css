@@ -2,7 +2,6 @@ body {
   color: #6b6b6b;
   background-color: #c2c2c2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 form {
@@ -14,17 +13,16 @@ form {
   /* border: 1px solid #6b6b6b ; *//*leave this code here for future reference */
   margin: 40px auto;
   padding: 20px;
+  text-transform: uppercase;
 }
 
 h2 {
-  text-transform: uppercase;
   font-weight: 100;
   margin: 15px;
 
 }
 
 label {
-  text-transform: none;
   display: flex;
   flex-flow: column;
   margin: 15px;
@@ -36,7 +34,6 @@ input {
 
 span {
   margin-top: 5px 0px 5px 0px;
-
 }
 
 
@@ -45,6 +42,7 @@ a {
   color: #6b6b6b;
   font-size: 12px;
   align-self: flex-end;
+  text-transform: none;
 }
 
 button {
