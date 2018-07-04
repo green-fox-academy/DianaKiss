@@ -7,12 +7,11 @@
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="petform.css" />
-  <script src="pets.js"></script>
 </head>
 
 <body>
   <form class="pet-form">
-    <div class="form-flex">
+    <div class="form-flex fav-type" >
       <p>What is your favourite pet?</p>
       <label>
         <input type="radio" value="Dog" name="pet-list">
@@ -42,7 +41,7 @@
 
       <p>Choose a pet and a name!</p>
       <div>
-        <select class="Pet select">
+        <select class="Pet-select">
           <option value="0" disabled selected>Please select one</option>
           <option value="cat">Cat</option>
           <option value="dog">Dog</option>
@@ -58,14 +57,14 @@
       </div>
     </div>
 
-    <div class="form-flex">
-      <button type="submit">I love cats</button>
-      <button type="submit">Sign up</button>
+    <div class="form-flex" id="buttons">
+      <button type="submit" class="loveCats"  disabled>I love cats</button>
+      <button type="submit" class="signUp" disabled>Sign up</button>
     </div>
 
   </form>
 
-
+  <script src="pets.js"></script>
 </body>
 
 </html>

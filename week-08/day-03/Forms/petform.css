@@ -4,21 +4,33 @@
 
 form {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  background-color: peachpuff;
 }
 
-#petName {
-
-}
+#petName {}
 
 .form-flex {
   padding: 20px;
   display: flex;
-  flex-flow: row;
+  /* flex-flow: row; */
   flex-direction: column;
 }
 
-button {
-  width: 200px;
+#buttons {
   flex-direction: row;
 }
+
+button {
+  width: 100px;
+  flex-direction: row;
+  margin: 4px;
+  border: none;
+  border-radius: 10px;
+  color: red;
+  background: linear-gradient(to top, white, peachpuff, white);
+}
+
+button:disabled {
+  color: coral;
+} 
