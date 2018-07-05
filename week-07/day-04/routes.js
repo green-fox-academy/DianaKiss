@@ -57,20 +57,54 @@ app.post('/api/posts', (req, res) => {
   });
 });
 
-// app.put('/api/posts/:id/upvote', (req, res) => {
-//   let id = req.params.id;
-//   let sql = `UPDATE posts SET vote = 1  WHERE id = ${id};`;
-//   conn.query(sql, (err, rows) => {
-//     if (err) {
-//       console.log(err);
-//       res.status(500).send();
-//       return;
-//     }
-//     res.json({
-//       message: 'OK',
-//     });
-//   });
-// });
+app.put('/api/posts/:id/upvote', (req, res) => {
+  let id = req.params.id;
+  let sql = `UPDATE posts SET score=score+1  WHERE post_id=${id};`;
+
+  conn.query(sql, (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send();
+      return;
+    }
+    res.json({
+      message: 'OK',
+    });
+  });
+});
+
+app.put('/api/posts/:id/downvote', (req, res) => {
+  let id = req.params.id;
+  let sql = `UPDATE posts SET score=score-1  WHERE post_id=${id};`;
+
+  conn.query(sql, (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send();
+      return;
+    }
+    res.json({
+      message: 'OK',
+    });
+  });
+});
+
+
+app.delete('/api/posts/:id', (req, res) => {
+  let id = req.params.id;
+  let sql = `DELETE from posts where post_id = ${id};`;
+
+  conn.query(sql, (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send();
+      return;
+    }
+    res.json({
+      message: 'OK',
+    });
+  });
+});
 
 
 module.exports = app;
