@@ -6,6 +6,7 @@ form {
   display: flex;
   flex-direction: column;
   background-color: peachpuff;
+  width: 400px;
 }
 
 #petName {}
