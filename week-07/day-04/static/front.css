@@ -18,9 +18,14 @@ main {
 
 .postcontainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
+ .vote {
+   /* width: 200px; */
+   display: flex;
+   flex-direction: column;
+ }
 
-voter {
-  display: block;
+.voter {
+  display: inline-block;
 }
