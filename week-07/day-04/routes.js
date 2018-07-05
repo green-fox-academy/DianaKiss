@@ -3,6 +3,7 @@
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
+const path = require('path');
 
 app.use('/static', express.static('static'));
 app.set('view engine', 'ejs');
@@ -22,7 +23,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/hello', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(path.join(__dirname , 'views/index.html'));
 });
 
 app.get('/api/posts', (req, res) => {
@@ -56,20 +57,20 @@ app.post('/api/posts', (req, res) => {
   });
 });
 
-app.put('/api/posts/:id/upvote', (req, res) => {
-  let id = req.params.id;
-  let sql = `UPDATE posts SET vote = 1  WHERE id = ${id};`;
-  conn.query(sql, (err, rows) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send();
-      return;
-    }
-    res.json({
-      message: 'OK',
-    });
-  });
-});
+// app.put('/api/posts/:id/upvote', (req, res) => {
+//   let id = req.params.id;
+//   let sql = `UPDATE posts SET vote = 1  WHERE id = ${id};`;
+//   conn.query(sql, (err, rows) => {
+//     if (err) {
+//       console.log(err);
+//       res.status(500).send();
+//       return;
+//     }
+//     res.json({
+//       message: 'OK',
+//     });
+//   });
+// });
 
 
 module.exports = app;

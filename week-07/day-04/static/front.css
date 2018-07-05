@@ -1,0 +1,12 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  color: aliceblue;
+  font-weight: 200;
+  letter-spacing: 10px;
+  background-color: black;
+  background-image: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+  padding: 20px;
+}
