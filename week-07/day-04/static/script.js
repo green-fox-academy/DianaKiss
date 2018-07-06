@@ -18,12 +18,25 @@ http.onload = () => {
     let vote = document.createElement('button');
     let myDiv = document.createElement('div');
 
-    vote.innerHTML = '';
-    vote.setAttribute('class', 'voter up');
-    vote.innerHTML = '';
-    vote.setAttribute('class', 'voter down');
+    // vote.innerHTML = '';
+    // vote.setAttribute('class', 'voter up');
+    // vote.innerHTML = '';
+    // vote.setAttribute('class', 'voter down');
+    // myDiv.innerHTML = `<h3>${element.title}</h3>`;
 
-    myDiv.innerHTML = `<h3>${element.title}</h3>`;
+    myDiv.innerHTML = `<div class="vote">
+        <button class="voter up"></button>
+        <p class="score">${element.score}</p>
+        <button class="voter down"></button>
+      </div>
+      <div class="individualpost">
+        <h3>${element.title}</h3>
+      <p>${element.url}</p>
+      </div>`;
+
+
+
+
     myDiv.setAttribute('class', 'postcontainer')
     document.querySelector('article').appendChild(myDiv);
 
