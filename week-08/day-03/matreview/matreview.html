@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables and forms</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      tbody tr:nth-child(even) {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    <table border="1" class="my-table">
+      <thead>
+        <th>Name</th>
+        <th>Email</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Secret</td>
+          <td>secret@example.com</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Secret</td>
+          <td>secret@example.com</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Secret</td>
+          <td>secret@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+    -->
+    <!-- <form action="http://localhost:3000/api/form" method="post" class="my-form"> -->
+    <form class="my-form">
+      <div>
+        <label>
+          <span>Name:</span>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Type your name here"
+            maxlength="8"
+            autofocus
+            required
+          >
+        </label>
+      </div>
+      <div>
+        <label>Age:
+          <input type="number" name="age">
+        </label>
+      </div>
+      <div>
+        <span>Birth:</span>
+        <input type="date" name="birthdate">
+      </div>
+      <div>
+        <span>Fav color:</span>
+        <input type="color" name="color">
+      </div>
+      <div>
+        <span>Range:</span>
+        <input type="range" min="0" max="10" step="5" name="range">
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" value="A" name="chbox-a" checked><span>A</span>
+        </label>
+        <label>
+          <input type="checkbox" value="B" name="chbox-b" checked><span>B</span>
+        </label>
+        <label>
+          <input type="checkbox" value="C" name="chbox-c"><span>C</span>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <input type="radio" value="1" name="radio-buttons"><span>1</span>
+        </label>
+        <label>
+          <input type="radio" value="2" name="radio-buttons" checked><span>2</span>
+        </label>
+        <label>
+          <input type="radio" value="3" name="radio-buttons"><span>3</span>
+        </label>
+      </div>
+
+      <select class="my-select">
+        <option value="0" disabled selected>Please select one</option>
+        <option value="opt-1">OP 1</option>
+        <option value="opt-2">OP 2</option>
+        <option value="opt-3">OP 3</option>
+      </select>
+
+      <textarea placeholder="placeholder text">Default text</textarea>
+
+      <label>
+        <input type="checkbox" name="terms" required>
+        <span>I agree...</span>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      document.querySelector('.my-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const elements = e.target.elements;
+        console.log(elements.username.value);
+      });
+    </script>
+  </body>
+</html>

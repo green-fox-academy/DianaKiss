@@ -106,5 +106,4 @@ app.delete('/api/posts/:id', (req, res) => {
   });
 });
 
-
 module.exports = app;

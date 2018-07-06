@@ -5,9 +5,20 @@
 form {
   display: flex;
   flex-direction: column;
-  background-color: peachpuff;
+  background-color: rgba(250, 208, 170, 0.5);
   width: 400px;
+  height: 600px;
 }
+
+.random-cat {
+  display: flex;
+  width: 100px;
+  height: auto;
+  float: right;
+  align-self: flex-end;
+  filter: opacity(10%);
+  }
+
 
 #petName {}
 
@@ -35,3 +46,10 @@ button {
 button:disabled {
   color: coral;
 } 
+
+
+.random-cat {
+  width: 100px;
+  height: auto;
+  filter: opacity(10%);
+  }

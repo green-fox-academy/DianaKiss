@@ -2,6 +2,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  width: 100%;
+}
+
 header {
   color: aliceblue;
   font-weight: 200;
@@ -19,13 +23,57 @@ main {
 .postcontainer {
   display: flex;
   flex-direction: row;
+  background-color: #eeeeee;
+  width: 100%;
 }
  .vote {
    /* width: 200px; */
    display: flex;
    flex-direction: column;
+   padding: 10px;
  }
 
 .voter {
   display: inline-block;
+}
+
+.up .down {
+  opacity: 0.5;
+  cursor: pointer;
+  border: none;
+}
+
+
+.up {
+  background-image: url("img/upvote.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.up:hover .down:hover {
+opacity: 1;
+}
+
+.down {
+  background-image: url("img/downvote.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.down:hover {
+  opacity: 1;
+  }
+
+.score {
+  text-align: center;
+}
+
+h3 {
+}
+
+aside {
+  position: fixed;
 }
