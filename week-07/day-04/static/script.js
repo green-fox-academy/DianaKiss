@@ -34,9 +34,6 @@ http.onload = () => {
       <p>${element.url}</p>
       </div>`;
 
-
-
-
     myDiv.setAttribute('class', 'postcontainer')
     document.querySelector('article').appendChild(myDiv);
 

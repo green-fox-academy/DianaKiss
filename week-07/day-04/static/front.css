@@ -2,78 +2,91 @@
   font-family: 'Lato', sans-serif;
 }
 
-body {
+html {
   width: 100%;
 }
 
-header {
-  color: aliceblue;
-  font-weight: 200;
-  letter-spacing: 10px;
-  background-color: black;
-  background-image: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
-  padding: 20px;
+body {
+  width: 100%;
 }
 
 main {
   display: flex;
   flex-direction: row;
+  width: 100%
+  /* flex-flow: row nowrap; */
+}
+
+article {
+  flex-grow: 2;
+}  
+
+aside {
+  flex-grow: 1;
+  /* position: fixed; */
+}  
+
+header {
+  color: aliceblue;
+  font-weight: 200;
+  letter-spacing: 2em;
+  background-color: black;
+  /* background-image: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350"); */
+  padding: 20px;
 }
 
 .postcontainer {
   display: flex;
-  flex-direction: row;
+  border: 1px solid peachpuff;
+  border-radius: 7px;
+  flex-flow: row nowrap;
   background-color: #eeeeee;
-  width: 100%;
 }
- .vote {
-   /* width: 200px; */
-   display: flex;
-   flex-direction: column;
-   padding: 10px;
- }
+
+.vote {
+  /* width: 200px; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
 
 .voter {
   display: inline-block;
 }
 
 .up .down {
-  opacity: 0.5;
+  background-color: tomato;
   cursor: pointer;
   border: none;
 }
 
-
 .up {
   background-image: url("img/upvote.png");
   background-repeat: no-repeat;
+  opacity: 0.7;
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
 
-.up:hover .down:hover {
-opacity: 1;
+.up:hover {
+  opacity: 1;
 }
 
 .down {
   background-image: url("img/downvote.png");
   background-repeat: no-repeat;
+  opacity: 0.7;
   width: 20px;
   height: 20px;
 }
 
 .down:hover {
   opacity: 1;
-  }
+}
 
 .score {
   text-align: center;
 }
 
-h3 {
-}
-
-aside {
-  position: fixed;
-}
+h3 {}
