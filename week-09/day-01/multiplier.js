@@ -3,6 +3,12 @@
 
 // Create the multiplier function that you can use like this:
 
+function multiplier(n) {
+  return function (origNum) {
+    return n * origNum;
+  }
+}
+
 const duplicator = multiplier(2);
 
 console.log(duplicator(5)); // should log 10
