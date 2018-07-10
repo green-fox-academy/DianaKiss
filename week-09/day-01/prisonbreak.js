@@ -27,8 +27,8 @@
 //   return { visit, escape };
 // }
 
+/*
 function prison(myName) {
-  // let name = myName;
   let counter = 0;
   const visit = () => {
     if (myName !== '') {
@@ -44,6 +44,34 @@ function prison(myName) {
   }
   return { visit, escape };
 }
+*/
+
+//third approach THX Bence
+
+class prison { 
+  constructor(name) {
+  this.name = name;
+  }
+
+  visit() {
+
+  }
+  find() {
+    
+  }
+}
+
+function prison(name) {
+  return {
+    visit: function() {
+
+    },
+    find: function() {
+
+    }
+  }
+}
+
 
 const alcatraz = prison('Sad Panda');
 
