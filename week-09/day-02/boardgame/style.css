@@ -1,0 +1,12 @@
+main {
+  display: grid;
+  background-color: aliceblue;
+  grid-template-columns: repeat(5, 1fr);
+
+
+}
+
+.tiles {
+  background-color: yellow;
+  /* border: 2px solid red; */
+}
