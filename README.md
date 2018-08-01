@@ -13,3 +13,5 @@
 [Wanderer - there are still ideas to work on](https://github.com/DianaKiss/wanderer-typescript)
 
 [To-Do app](https://github.com/DianaKiss/todo-app)
+
+[Learning Angular2 with the help of Heroes](https://github.com/DianaKiss/AngularHeroes)
