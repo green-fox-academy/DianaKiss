@@ -1,0 +1,24 @@
+li {
+  
+  background-color: lightgrey;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+div {
+  padding: 5px;
+}
+
+.city {
+  font-size: 2em;
+}
+
+.temperature {
+
+}
+
+.terms {
+  
+}

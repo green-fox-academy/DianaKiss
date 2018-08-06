@@ -1,5 +1,14 @@
+<h2>Locations:</h2>
+
+<h3>{{TILES}}</h3>
+
 <ul class="tiles">
   <li *ngFor="let tile of tiles">
-    <span class="weatherInfo">{{tile.city}}</span> {{tile.location}}
+    <div class="place">
+      <p class="city">{{tile.city}}</p>
+      <p class="location">{{tile.location}}</p>
+    </div>
+    <div class="temperature">{{tile.temperature}}</div>
+    <div class="terms">{{tile.terms}}</div>
   </li>
 </ul>

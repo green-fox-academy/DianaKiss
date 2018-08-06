@@ -11,7 +11,7 @@ import { TILES } from '../mock-weather-data';
 })
 export class LocationTilesComponent implements OnInit {
 
-  tile = TILES;
+  tiles = TILES;
 
   constructor() { }
 
