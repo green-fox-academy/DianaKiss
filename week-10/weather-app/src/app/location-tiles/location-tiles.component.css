@@ -16,9 +16,12 @@ div {
 }
 
 .temperature {
+  font-size: 2em;
+  justify-content: center;  
+  text-align: center;
 
 }
 
 .terms {
-  
+ background-color: black;
 }
