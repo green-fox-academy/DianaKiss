@@ -2,7 +2,7 @@
 
 import { Plant } from './plant';
 
-class Tree extends Plant {
+export class Tree extends Plant {
   
   public checkwater(): void {
     if (this.waterLevel < 10) {
@@ -12,5 +12,3 @@ class Tree extends Plant {
 
 
 }
-
-export { Tree };
