@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WeatherDataService } from '../weather-data.service';
 
 @Component({
   selector: 'app-search-location',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchLocationComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private weatherDataService: WeatherDataService,
+  ) { }
 
   ngOnInit() {
+    this.weatherDataService.getWeather().subscribe();
   }
 
 }
