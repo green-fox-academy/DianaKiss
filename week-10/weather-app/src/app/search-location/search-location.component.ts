@@ -8,12 +8,20 @@ import { WeatherDataService } from '../weather-data.service';
 })
 export class SearchLocationComponent implements OnInit {
 
+  public weatherData = [];
+
   constructor(
-    private weatherDataService: WeatherDataService,
+    private weatherDataService: WeatherDataService
   ) { }
 
-  ngOnInit() {
-    this.weatherDataService.getWeather().subscribe();
+  ngOnInit(
+  ) {
   }
-
+  
+  searchWeather() {  
+  this.weatherDataService.getWeather().subscribe(
+    data => this.weatherData = data
+    );
+    console.log(this.weatherData);
+  }
 }
