@@ -20,8 +20,8 @@ export class SearchLocationComponent implements OnInit {
   
   searchWeather() {  
   this.weatherDataService.getWeather().subscribe(
-    data => this.weatherData = data
+    data => {this.weatherData.push(data)
+    console.log(this.weatherData)}
     );
-    console.log(this.weatherData);
   }
 }
